@@ -1,0 +1,240 @@
+HASHTABLE PROJECT:
+You will be given a skeleton-code that will compile. You will need to add it it.
+
+Program will: 
+1. Implement a Hash Table that solves collisions using: (10 Points) a. Chaining (linked lists) 
+2. Perform proper: 
+a. Hash Insert(), 
+b. Hash Delete(),  
+c. and Hash LookUp(). 
+i. Will Print the ID, GPA, and Major to the screen. 
+
+
+3. Provide an improved Hash Function, other than what was provided to you.
+ a. Cite the resource(s) you use to solve this problem. 
+
+4. Provide two views of the Hash Table: 
+a. A detailed, per Bucket per Node view. 
+b. A high-level, Hash Table view 
+
+5. Be readable and professional. 
+a. Both code and output. 
+
+6. Implement a multi-file structure. 
+a. Requires the use of a makefile. 
+b. Requires the use of a clean function in your make file. 
+
+
+Use of the following libraries: 
+o cout 
+o endl 
+o Strings 
+o Linked Lists 
+o Iostream 
+		
+What is NOT allowed:  
+• Using any method other than chaining to solve collisions. 
+• Using any library not authorized above. 
+• Use of any code that you did not author. 
+• Use of any code not provided to you by the TAs, Peer Mentors, or myself. 
+• Use of any g++ flag (other than –c). 
+• Using a Hash table larger than 20. 
+• Failure to cite any external (out of class) resources used to complete this assignment 
+
+Example Output
+((Here I had already placed 3 values into the Hash Table and then Printed the changes to the screen.))
+Hash Table Bucket Values:
+Bucket 1:
+{ }
+Bucket 2:
+{ 1 }
+Bucket 3:
+{ 2 }
+Bucket 4:
+{ 3 }
+Bucket 5:
+{ }
+Bucket 6:
+{ }
+Bucket 7:
+{ }
+Bucket 8:
+{ }
+Bucket 9:
+{ }
+Bucket 10:
+{ }
+Bucket 11:
+{ }
+Bucket 12:
+{ }
+Bucket 13:
+{ }
+Bucket 14:
+{ }
+Bucket 15:
+{ }
+Bucket 16:
+{ }
+Bucket 17:
+{ }
+Bucket 18:
+{ }
+Bucket 19:
+{ }
+Bucket 20:
+{ }
+Hash Table Contains 3 Nodes total
+1:
+2: O
+3: O
+4: O
+5:
+6:
+7:
+8:
+9:
+10:
+11:
+12:
+13:
+14:
+15:
+16:
+17:
+18:
+19:
+20:
+
+((I then was able to perform a Hash Delete on HashKey 1! Then printed the results))
+Hash Table Bucket Values:
+Bucket 1:
+{ }
+Bucket 2:
+{ }
+Bucket 3:
+{ 2 }
+Bucket 4:
+{ 3 }
+Bucket 5:
+{ }
+Bucket 6:
+{ }
+Bucket 7:
+{ }
+Bucket 8:
+{ }
+Bucket 9:
+{ }
+Bucket 10:
+{ }
+Bucket 11:
+{ }
+Bucket 12:
+{ }
+Bucket 13:
+{ }
+Bucket 14:
+{ }
+Bucket 15:
+{ }
+Bucket 16:
+{ }
+Bucket 17:
+{ }
+Bucket 18:
+{ }
+Bucket 19:
+{ }
+Bucket 20:
+{ }
+Hash Table Contains 2 Nodes total
+1:
+2:
+3: O
+4: O
+5:
+6:
+7:
+8:
+9:
+10:
+11:
+12:
+13:
+14:
+15:
+16:
+17:
+18:
+19:
+20:
+((I then put in a total of 25 values and printed the results to the screen))
+Hash Table Bucket Values:
+Bucket 1:
+{ 20 }
+Bucket 2:
+{ 21 }
+Bucket 3:
+{ 2, 22 }
+Bucket 4:
+{ 3, 23 }
+Bucket 5:
+{ 4, 24 }
+Bucket 6:
+{ 5, 25 }
+Bucket 7:
+{ 6, 26 }
+Bucket 8:
+{ 7 }
+Bucket 9:
+{ 8 }
+Bucket 10:
+{ 9 }
+Bucket 11:
+{ 10 }
+Bucket 12:
+{ 11 }
+Bucket 13:
+{ 12 }
+Bucket 14:
+{ 13 }
+Bucket 15:
+{ 14 }
+Bucket 16:
+{ 15 }
+Bucket 17:
+{ 16 }
+Bucket 18:
+{ 17 }
+Bucket 19:
+{ 18 }
+Bucket 20:
+{ 19 }
+Hash Table Contains 25 Nodes total
+1: O
+2: O
+3: O O
+4: O O
+5: O O
+6: O O
+7: O O
+8: O
+9: O
+10: O
+11: O
+12: O
+13: O
+14: O
+15: O
+16: O
+17: O
+18: O
+19: O
+20: O
+((Here I performed a LookUp on value 19 and returned the results.))
+Looking up Student 19…
+Student 19 FOUND! Printing out Student 19 Data:
+ID: 19
+GPA: 4.0
+Major: CS
